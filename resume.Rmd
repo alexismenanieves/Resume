@@ -99,7 +99,7 @@ Manuel Alexis Mena Nieves {#title}
 print_text_block(text_blocks, 'intro')
 ```
 
-Development {data-icon=pencil}
+Current development {data-icon=pencil}
 --------------------------------------------------------------------------------
 
 ```{r}
