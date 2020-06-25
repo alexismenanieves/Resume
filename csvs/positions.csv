@@ -1,0 +1,13 @@
+section,in_resume,title,loc,institution,start,end,description_1,description_2,description_3
+education,TRUE,Certificate in Data Science: Machine Learning,USA,EDX – HarvardX,2019,2019,,,
+education,TRUE,Certificate in Analyzing and Visualizing Data with Power BI,USA,EDX – Microsoft,2017,2017,,,
+education,TRUE,Master in Operations and Logistics,Spain,Polytechnic University of Catalonia,2009,2010,,,
+education,TRUE,Master in Operations Management,Peru,Peruvian University of Applied Sciences,2009,2010,,,
+education,TRUE,B.E. Industrial Engineering,Peru,National University of San Marcos,1997,2002,Developed a website for CONEII Conference of Industrial Engineers in 2001,,
+industry_positions,TRUE,Data Science and BI Manager,Peru,Independencia Asesores,2020,Currently,"Defined a data science management plan in a Fintech to produce algorithms and automations in the commercial area, executing in a short time frame","Worked across the organization to deliver insights via ad-hoc and real-time analysis of internal (funnel conversion, loan prediction, customer satisfaction history) and external/third-party data","Designed workflow to regularly collect, modify and store web leads and loan data for commercial analysis"
+industry_positions,TRUE,Sales Strategy and Analytics Manager,Peru,TIXM Asociados,2019,2019,"Managed accounts in the automotive, mining and local government industries, to support them with AI solutions and market research",,
+industry_positions,TRUE,Aftersales District Manager,Peru & Bolivia,General Motors,2014,2018,Exceeded sales quota in 41% and 18% in 2017 and 2018 respectively for Peru and Bolivia markets by effective deployment of commercial plans & parts promotion,Created an integrated dashboard for sales and pricing analytics in Power BI that provided sound decision support for parts promotion and stock management,
+industry_positions,FALSE,Service District Manager,Peru,General Motors,2013,2014,,,
+industry_positions,FALSE,Service Supervisor,Peru,General Motors,2010,2013,,,
+industry_positions,FALSE,Service Coordinator,Peru,Grupo Pana,2002,2010,,,
+current_projects,TRUE,Integrated Commercial Report System,AWS Cloud,,,2020,"Developed dashboards in Shiny on EC2 clusters to report loan operations, predict revenue on demand and inform business performance to top management",,
