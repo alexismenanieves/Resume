@@ -1,0 +1,122 @@
+---
+title: Manuel Alexis Mena Nieves Resume"
+author: Manuel Alexis Mena Nieves
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/custom_resume.css', 'css/styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+---
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+library(tidyverse)
+library(glue)
+# ======================================================================
+# Is the goal of this knit to build a document that is exported to PDF? If so
+# set this to true to have links turned into footnotes at the end of the
+# document
+PDF_EXPORT <- TRUE
+# A global (gasp) variable that holds all the links that were inserted for
+# placement at the end
+links <- c()
+# ======================================================================
+# Now we source two external scripts. One contains functions for building the
+# text output and the other loads up our data from either googlesheets or csvs
+# Functions for building sections from CSV data
+source('parsing_functions.R') 
+# Load data for CV/Resume
+source('gather_data.R')
+# Now we just need to filter down the position data to include less verbose
+# categories and only the entries we have designated for the resume
+position_data <- position_data %>% 
+  filter(in_resume) %>% 
+  mutate(
+    # Build some custom sections by collapsing others
+    section = case_when(
+      section %in% c('experience') ~ 'positions', 
+      TRUE ~ section
+    )
+  ) 
+```
+
+
+
+Aside
+================================================================================
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+```{r}
+contact_info %>% 
+   glue_data("- <i class='fa fa-{icon}'></i> {contact}")
+```
+
+
+
+Languages and Tools {#tools}
+--------------------------------------------------------------------------------
+
+```{r}
+tools %>% 
+  glue_data("- <i class='fa fa-{icon}'></i> {tools}")
+```
+
+Portfolio {#blog} 
+--------------------------------------------------------------------------------  
+
+Some favorites include:  
+
+```{r}
+blog %>% 
+  glue_data("- <i class='fa fa-{icon}'></i> {bullet}")
+```
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Made w/ [**pagedown**](https://github.com/rstudio/pagedown). 
+
+Source code: [github.com/alexismenanieves/resume](https://github.com/alexismenanieves/resume).
+
+Last updated on `r Sys.Date()`.
+
+
+
+Main
+================================================================================
+
+Manuel Alexis Mena Nieves {#title}
+--------------------------------------------------------------------------------
+
+```{r}
+print_text_block(text_blocks, 'intro')
+```
+
+Development {data-icon=pencil}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('current_projects')
+```
+
+
+Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('industry_positions')
+```
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('education')
+```
