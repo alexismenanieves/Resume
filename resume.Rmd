@@ -1,5 +1,5 @@
 ---
-title: Manuel Alexis Mena Nieves Resume"
+title: "Manuel Alexis Mena Nieves Resume"
 author: Manuel Alexis Mena Nieves
 date: "`r Sys.Date()`"
 output:
