@@ -99,14 +99,6 @@ Manuel Alexis Mena Nieves {#title}
 print_text_block(text_blocks, 'intro')
 ```
 
-Current development {data-icon=pencil}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('current_projects')
-```
-
-
 Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
@@ -119,4 +111,11 @@ Education {data-icon=graduation-cap data-concise=true}
 
 ```{r}
 position_data %>% print_section('education')
+```
+
+Current development {data-icon=pencil}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('current_projects')
 ```
