@@ -1,6 +1,6 @@
 section,in_resume,title,loc,institution,start,end,description_1,description_2,description_3
 education,TRUE,Master of Science in Computer Science,USA,Georgia Institute of Technology,2021,Currently,,,
-education,TRUE,Certificate in Data Science: Machine Learning,USA,EDX - HarvardX,2019,2019,,,
+education,TRUE,Certificate in Data Science,USA,EDX - HarvardX,2019,2021,,,
 education,TRUE,Certificate in Analyzing and Visualizing Data with Power BI,USA,EDX - Microsoft,2017,2017,,,
 education,TRUE,Master in Operations and Logistics,Spain,Polytechnic University of Catalonia,2009,2010,,,
 education,TRUE,Master in Operations Management,Peru,Peruvian University of Applied Sciences,2009,2010,,,
