@@ -58,8 +58,6 @@ contact_info %>%
    glue_data("- <i class='fa fa-{icon}'></i> {contact}")
 ```
 
-
-
 Languages and Tools {#tools}
 --------------------------------------------------------------------------------
 
