@@ -45,6 +45,37 @@ position_data <- position_data %>%
   ) 
 ```
 
+Main
+================================================================================
+
+Manuel Alexis Mena Nieves {#title}
+--------------------------------------------------------------------------------
+
+```{r}
+print_text_block(text_blocks, 'intro')
+```
+
+Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('industry_positions')
+```
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('education')
+```
+
+Current development {data-icon=pencil}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('current_projects')
+```
+
 
 
 Aside
@@ -85,35 +116,3 @@ Source code: [github.com/alexismenanieves/resume](https://github.com/alexismenan
 
 Last updated on `r Sys.Date()`.
 
-
-
-Main
-================================================================================
-
-Manuel Alexis Mena Nieves {#title}
---------------------------------------------------------------------------------
-
-```{r}
-print_text_block(text_blocks, 'intro')
-```
-
-Experience {data-icon=suitcase}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('industry_positions')
-```
-
-Education {data-icon=graduation-cap data-concise=true}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('education')
-```
-
-Current development {data-icon=pencil}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('current_projects')
-```
